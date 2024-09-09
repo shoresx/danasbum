@@ -1,0 +1,21 @@
+---
+const platform = "facebook";
+const username = "shorecs";
+
+const platform2 = "instagram";
+const username2 = "docnetmedia";
+import Social from './Social.astro';
+---
+<style>
+    footer {
+      display: flex;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+</style>
+<footer>
+  <p>Learn more about my projects on <a href={`https://www.${platform}.com/${username}`}>{platform}</a>!, or check out my <a href={`https://www.${platform2}.com/${username2}`}>{platform2}</a></p>
+  <Social platform="twitter" username="astrodotbuild" />
+  <Social platform="github" username="withastro" />
+  <Social platform="youtube" username="astrodotbuild" />
+</footer>
